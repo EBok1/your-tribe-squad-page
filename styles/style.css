@@ -2,6 +2,7 @@ body {
     background-image: url(../assets/casinoachtergrond.png);
 }
 
+<<<<<<< Updated upstream
 .container{
     display: flex;
     flex-direction: row;
@@ -11,3 +12,5 @@ body {
 ul {
     list-style: none;
 }
+=======
+>>>>>>> Stashed changes
