@@ -3,6 +3,7 @@
 }
 
 body {
+<<<<<<< Updated upstream
     /* background-image: url(../assets/casinoachtergrond.png); */
 }
 
@@ -71,3 +72,16 @@ button.hover {
     padding: 5em;
     transform:translateY(-2.92em) translateZ(7.07em);
 }
+=======
+    background-image: url(../assets/casinoachtergrond.png);
+}
+
+.card-photo {
+    height: 30%;
+    width: 30%;
+}
+
+.selected {
+  border: 5px solid red;
+}
+>>>>>>> Stashed changes
