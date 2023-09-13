@@ -27,15 +27,20 @@ main {
 }
 
 h1 {
-    font-size: 5em;
-    /* background: linear-gradient(to bottom, gold, brown); */
+    /* font-size: 5em;
+    background: linear-gradient(to bottom, gold, brown);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    display: inline-block;
+    display: inline-block; */
 }
 
 ul {
     list-style: none;
+}
+
+.card-photo {
+  width: 30%;
+  height: 30%;
 }
 
 
@@ -53,17 +58,17 @@ ul {
 }
 
 div.playbuttons {
-   
+
 }
 
 button {
     border-radius: 50%;    
-    border-style: solid;
     aspect-ratio: 1;
+    cursor: pointer;
 }
 
 button.hover {
-
+    
 }
 
 
