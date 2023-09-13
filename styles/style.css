@@ -34,12 +34,25 @@ ul {
     list-style: none;
 }
 
+.card {
+  background: lightblue;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+}
+
+.card > a {
+  display: flex;
+  flex-direction: column;
+}
+
 .card-photo {
   width: 30%;
   height: 30%;
 }
 
-
+.selected {
+    background-color: greenyellow;
+}
 
 /* controls */
 .controls {
