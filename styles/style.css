@@ -44,7 +44,71 @@ ul {
 }
 
 
+.carousel-1{
+    position: absolute;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
 
+.card selected{
+    position: absolute;
+	width: 14rem;
+	height: 18rem;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.card selected li{
+    list-style: none;
+	padding: 0;
+	margin: 0;
+	width: 14rem;
+	height: 18rem;
+	text-align: center;
+	line-height: 18rem;
+	font-size: 2rem;
+	font-family: sans-serif;
+	background-color: #9d7cce;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 0.8rem;
+}
+
+.carousel-2{
+    position: absolute;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.card selected{
+    position: absolute;
+	width: 14rem;
+	height: 18rem;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.card selected li{
+    list-style: none;
+	padding: 0;
+	margin: 0;
+	width: 14rem;
+	height: 18rem;
+	text-align: center;
+	line-height: 18rem;
+	font-size: 2rem;
+	font-family: sans-serif;
+	background-color: #9d7cce;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 0.8rem;
+}
 
 /* controls */
 .controls {
