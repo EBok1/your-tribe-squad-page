@@ -2,7 +2,14 @@ body {
     background-image: url(../assets/casinoachtergrond.png);
 }
 
-<<<<<<< Updated upstream
+h1 {
+    font-size: 5em;
+    background: linear-gradient(to bottom, gold, brown);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
 .container{
     display: flex;
     flex-direction: row;
@@ -12,5 +19,13 @@ body {
 ul {
     list-style: none;
 }
-=======
->>>>>>> Stashed changes
+
+button {
+    border-radius: 50%;    
+    border-style: solid;
+    aspect-ratio: 1;
+}
+
+button.hover {
+
+}
