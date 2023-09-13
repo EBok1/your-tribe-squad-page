@@ -34,6 +34,11 @@ ul {
     list-style: none;
 }
 
+card-photo {
+  width: 30%;
+  height: 30%;
+}
+
 
 
 /* controls */
