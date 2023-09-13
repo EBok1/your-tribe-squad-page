@@ -34,7 +34,7 @@ ul {
     list-style: none;
 }
 
-card-photo {
+.card-photo {
   width: 30%;
   height: 30%;
 }
