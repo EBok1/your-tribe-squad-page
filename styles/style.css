@@ -38,18 +38,19 @@ ul {
   background: lightblue;
   margin-top: 0.2rem;
   margin-bottom: 0.2rem;
-  overflow:hidden;
-
+  
 }
 
 .card > a {
   display: flex;
   flex-direction: column;
+
 }
 
 .card-photo {
     width: 30%;
     height: 30%;
+  
 }
 
 .selected {
