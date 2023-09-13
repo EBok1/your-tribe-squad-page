@@ -38,6 +38,7 @@ ul {
   background: lightblue;
   margin-top: 0.2rem;
   margin-bottom: 0.2rem;
+  overflow:hidden;
 }
 
 .card > a {
