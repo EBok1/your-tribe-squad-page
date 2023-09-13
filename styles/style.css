@@ -39,6 +39,8 @@ ul {
   margin-top: 0.2rem;
   margin-bottom: 0.2rem;
   overflow:hidden;
+  width: 100px;
+  height: 150px;
 }
 
 .card > a {
