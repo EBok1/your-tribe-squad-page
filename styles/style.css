@@ -8,10 +8,6 @@ body {
 
 main {
     perspective: 100em;
-    position: absolute;
-	width: 100%;
-	height: 100vh;
-	overflow: hidden;
 }
 
  /* display */
@@ -23,7 +19,7 @@ main {
 
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: center; */
 }
 
 h1 {
@@ -37,14 +33,11 @@ h1 {
 ul {
     list-style: none;
 }
-
+    
 .card-photo {
-  width: 30%;
-  height: 30%;
+    width: 30%;
+    height: 30%;
 }
-
-
-
 
 /* controls */
 .controls {
@@ -79,5 +72,5 @@ button.hover {
     max-width: 50%;
     margin: auto;
     padding: 5em;
-    transform:translateY(-2.92em) translateZ(7.07em);
+    transform: translateY(-2.92em) translateZ(7.07em);
 }
