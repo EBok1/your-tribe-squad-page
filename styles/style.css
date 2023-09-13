@@ -53,17 +53,17 @@ ul {
 }
 
 div.playbuttons {
-   
+
 }
 
 button {
     border-radius: 50%;    
-    border-style: solid;
     aspect-ratio: 1;
+    cursor: pointer;
 }
 
 button.hover {
-
+    
 }
 
 
