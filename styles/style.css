@@ -212,9 +212,9 @@ li:nth-of-type(15) {
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    
   }
-
-
 
   section.controls {
     width: 100%;
@@ -223,6 +223,13 @@ li:nth-of-type(15) {
   section.bottom {
     display: none;
   }
+
+  ul.carousel-1 {
+   padding: 0;
+   margin: 0 auto;
+  }
+
+  
 
     
 }
