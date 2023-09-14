@@ -328,3 +328,8 @@ li:nth-of-type(44) {
 li:nth-of-type(45) {
     transform: rotateX(360deg) translateZ(24em);
 }
+
+@media only screen and (max-width: 600px) {
+
+    
+}
