@@ -3,17 +3,23 @@
 }
 
 body {
-    /* background-image: url(../assets/casinoachtergrond.png); */
+    background-image: url(../assets/casinoachtergrond.png);
 }
 
 main {
     perspective: 100em;
 }
 
+section {
+    border-style: solid;
+    border-color: gold;
+    border-width: 0.25em;
+}
+
  /* display */
 .display {
     margin: auto;
-    padding: 10em;
+    padding: 14em;
     max-width: 50%;
     background-color: green;
     display: flex;
@@ -35,7 +41,7 @@ ul {
 }
 
 ul li {
-    border: 2px solid black;
+
 }
 
 .card {
@@ -43,28 +49,29 @@ ul li {
     display: block;
     position: absolute;
     width: 8em;
-    height: 10.25em;
+    height: 10em;
+    border-left: solid gold;
+    border-right: solid gold;
+    border-width: 0.35em;
 }
 
 .card > a {
   display: flex;
   flex-direction: column;
-  
-
 }
 
 .card-photo {
-    width: 30%;
-    height: 30%;
-  
+    width: 100%;
 }
 
+.card-name {
+    visibility: hidden;
+}
 
 
 .selected {
     background-color: greenyellow;
 }
-
 
 /* controls */
 .controls {
@@ -91,16 +98,13 @@ button.hover {
     
 }
 
-
-
-
 /* bottom */
 .bottom {
     transform-origin: top;
     background-color: blue;
     max-width: 50%;
     margin: auto;
-    padding: 5em;
+    padding: 10em;
     transform: translateY(-2.92em) translateZ(7.07em);
 }
 
