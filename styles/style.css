@@ -34,10 +34,17 @@ ul {
     list-style: none;
 }
 
+ul li {
+    border: 2px solid black;
+    margin: 1px 0;
+}
+
 .card {
   background: lightblue;
   margin-top: 0.2rem;
   margin-bottom: 0.2rem;
+
+
   
 }
 
@@ -53,6 +60,8 @@ ul {
     height: 30%;
   
 }
+
+
 
 .selected {
     background-color: greenyellow;
