@@ -212,6 +212,8 @@ li:nth-of-type(15) {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
+    overflow: hidden;
     
     
   }
@@ -225,9 +227,41 @@ li:nth-of-type(15) {
   }
 
   ul.carousel-1 {
-   padding: 0;
    margin: 0 auto;
+   display: flex;
+   justify-content: flex-end;
+   overflow: hidden;
   }
+
+  ul.carousel-2 {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+   }
+
+   .card {
+    background-color: white;
+    display: block;
+    position: absolute;
+    width: 6em;
+    height: 8em;
+    border-left: solid gold;
+    border-right: solid gold;
+    border-width: 0.35em;
+}
+
+.card > a {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-photo {
+    width: 100%;
+}
+
+.card-name {
+    visibility: hidden;
+}
 
   
 
