@@ -4,6 +4,8 @@
 
 body {
     background-image: url(../assets/casinoachtergrond.png);
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 main {
