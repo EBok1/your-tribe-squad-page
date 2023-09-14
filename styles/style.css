@@ -205,5 +205,24 @@ li:nth-of-type(15) {
 
 @media only screen and (max-width: 600px) {
 
+.display {
+    width: 100%;
+    border: none;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+  section.controls {
+    width: 100%;
+  }
+
+  section.bottom {
+    display: none;
+  }
+
     
 }
