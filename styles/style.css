@@ -18,6 +18,7 @@ main {
     background-color: green;
     display: flex;
     flex-direction: row;
+    overflow: hidden;
 }
 
 h1 {
