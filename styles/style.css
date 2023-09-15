@@ -346,6 +346,17 @@ li:nth-of-type(45) {
     overflow: hidden;
 }
 
+.slotmachine{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    
+}
+
+
+
 
 
 
