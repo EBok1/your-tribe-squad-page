@@ -3,23 +3,22 @@
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
     background-image: url(../assets/casinoachtergrond.png);
-    overflow-y: hidden;
-    overflow-x: hidden;
 }
 
 main {
-  perspective: 100em;
+    perspective: 100em;
 }
 
 section {
     border-style: solid;
     border-color: gold;
     border-width: 0.25em;
+
 }
 
  /* display */
@@ -31,10 +30,12 @@ section {
     display: flex;
     flex-direction: row;
     overflow: hidden;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
-  /* font-size: 5em;
+    /* font-size: 5em;
     background: linear-gradient(to bottom, gold, brown);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -44,10 +45,11 @@ h1 {
 ul {
     list-style: none;
     margin: 4em;
+    
 }
 
 ul li {
-
+    margin: auto;
 }
 
 .card {
@@ -74,32 +76,33 @@ ul li {
     visibility: hidden;
 }
 
-
 .selected {
-  background-color: greenyellow;
+    background-color: greenyellow;
 }
 
 /* controls */
 .controls {
-  background-color: red;
-  transform-origin: center top;
-  transform: rotateX(45deg);
-  height: 10em;
-  max-width: 50%;
-  margin: auto;
-  padding: 3.3em;
+    background-color: red;
+    transform-origin: center top;
+    transform: rotateX(45deg);
+    height: 10em;
+    max-width: 50%;
+    margin: auto;
+    padding: 3.3em;
 }
 
 div.playbuttons {
+
 }
 
 button {
-  border-radius: 50%;
-  aspect-ratio: 1;
-  cursor: pointer;
+    border-radius: 50%;    
+    aspect-ratio: 1;
+    cursor: pointer;
 }
 
 button.hover {
+    
 }
 
 /* bottom */
@@ -116,94 +119,237 @@ button.hover {
   transform-style: preserve-3d;
 }
 
-.start-spinning {
-  animation: draai;
-  animation-duration: 2s;
-  animation-timing-function: ease-in;
-}
-
-.spinning {
-  animation: draai;
-  animation-duration: 2s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-
-.stop-spinning {
-
-}
-
 @keyframes draai {
-  0% {
-    transform: rotateX(360deg);
-  }
-  100% {
-    transform: rotateX(0deg);
-  }
+    0% {
+        transform: rotateX(360deg);
+    }
+    100% {
+        transform: rotateX(0deg);
+    }
 }
+
 
 /* slot1 */
 li:nth-of-type(1) {
-  transform: rotateX(24deg) translateZ(var(--carousel-grootte));
+    transform: rotateX(24deg) translateZ(24em);
 }
 
 li:nth-of-type(2) {
-  transform: rotateX(48deg) translateZ(var(--carousel-grootte));
+    transform: rotateX(48deg) translateZ(24em);
 }
 
 li:nth-of-type(3) {
-  transform: rotateX(72deg) translateZ(var(--carousel-grootte));
+    transform: rotateX(72deg) translateZ(24em);
 }
 
 li:nth-of-type(4) {
-  transform: rotateX(96deg) translateZ(var(--carousel-grootte));
+    transform: rotateX(96deg) translateZ(24em);
 }
 
 li:nth-of-type(5) {
-  transform: rotateX(120deg) translateZ(var(--carousel-grootte));
+    transform: rotateX(120deg) translateZ(24em);
 }
 
 li:nth-of-type(6) {
-  transform: rotateX(144deg) translateZ(var(--carousel-grootte));
+    transform: rotateX(144deg) translateZ(24em);
 }
 
 li:nth-of-type(7) {
-  transform: rotateX(168deg) translateZ(var(--carousel-grootte));
+    transform: rotateX(168deg) translateZ(24em);
 }
 
 li:nth-of-type(8) {
-  transform: rotateX(192deg) translateZ(var(--carousel-grootte));
+    transform: rotateX(192deg) translateZ(24em);
 }
 
 li:nth-of-type(9) {
-  transform: rotateX(216deg) translateZ(var(--carousel-grootte));
+    transform: rotateX(216deg) translateZ(24em);
 }
 
 li:nth-of-type(10) {
-  transform: rotateX(240deg) translateZ(var(--carousel-grootte));
+    transform: rotateX(240deg) translateZ(24em);
 }
 
 li:nth-of-type(11) {
-  transform: rotateX(264deg) translateZ(var(--carousel-grootte));
+    transform: rotateX(264deg) translateZ(24em);
 }
 
 li:nth-of-type(12) {
-  transform: rotateX(288deg) translateZ(var(--carousel-grootte));
+    transform: rotateX(288deg) translateZ(24em);
 }
 
 li:nth-of-type(13) {
-  transform: rotateX(312deg) translateZ(var(--carousel-grootte));
+    transform: rotateX(312deg) translateZ(24em);
 }
 
 li:nth-of-type(14) {
-  transform: rotateX(336deg) translateZ(var(--carousel-grootte));
+    transform: rotateX(336deg) translateZ(24em);
 }
 
 li:nth-of-type(15) {
-  transform: rotateX(360deg) translateZ(var(--carousel-grootte));
+    transform: rotateX(360deg) translateZ(24em);
 }
 
+
+
+/* slot2 */
+li:nth-of-type(16) {
+    transform: rotateX(24deg) translateZ(24em);
+}
+
+li:nth-of-type(17) {
+    transform: rotateX(48deg) translateZ(24em);
+}
+
+li:nth-of-type(18) {
+    transform: rotateX(72deg) translateZ(24em);
+}
+
+li:nth-of-type(19) {
+    transform: rotateX(96deg) translateZ(24em);
+}
+
+li:nth-of-type(20) {
+    transform: rotateX(120deg) translateZ(24em);
+}
+
+li:nth-of-type(21) {
+    transform: rotateX(144deg) translateZ(24em);
+}
+
+li:nth-of-type(22) {
+    transform: rotateX(168deg) translateZ(24em);
+}
+
+li:nth-of-type(23) {
+    transform: rotateX(192deg) translateZ(24em);
+}
+
+li:nth-of-type(24) {
+    transform: rotateX(216deg) translateZ(24em);
+}
+
+li:nth-of-type(25) {
+    transform: rotateX(240deg) translateZ(24em);
+}
+
+li:nth-of-type(26) {
+    transform: rotateX(264deg) translateZ(24em);
+}
+
+li:nth-of-type(27) {
+    transform: rotateX(288deg) translateZ(24em);
+}
+
+li:nth-of-type(28) {
+    transform: rotateX(312deg) translateZ(24em);
+}
+
+li:nth-of-type(29) {
+    transform: rotateX(336deg) translateZ(24em);
+}
+
+li:nth-of-type(30) {
+    transform: rotateX(360deg) translateZ(24em);
+}
+
+
+/* slot3 */
+li:nth-of-type(31) {
+    transform: rotateX(24deg) translateZ(24em);
+}
+
+li:nth-of-type(32) {
+    transform: rotateX(48deg) translateZ(24em);
+}
+
+li:nth-of-type(33) {
+    transform: rotateX(72deg) translateZ(24em);
+}
+
+li:nth-of-type(34) {
+    transform: rotateX(96deg) translateZ(24em);
+}
+
+li:nth-of-type(35) {
+    transform: rotateX(120deg) translateZ(24em);
+}
+
+li:nth-of-type(36) {
+    transform: rotateX(144deg) translateZ(24em);
+}
+
+li:nth-of-type(37) {
+    transform: rotateX(168deg) translateZ(24em);
+}
+
+li:nth-of-type(38) {
+    transform: rotateX(192deg) translateZ(24em);
+}
+
+li:nth-of-type(39) {
+    transform: rotateX(216deg) translateZ(24em);
+}
+
+li:nth-of-type(40) {
+    transform: rotateX(240deg) translateZ(24em);
+}
+
+li:nth-of-type(41) {
+    transform: rotateX(264deg) translateZ(24em);
+}
+
+li:nth-of-type(42) {
+    transform: rotateX(288deg) translateZ(24em);
+}
+
+li:nth-of-type(43) {
+    transform: rotateX(312deg) translateZ(24em);
+}
+
+li:nth-of-type(44) {
+    transform: rotateX(336deg) translateZ(24em);
+}
+
+li:nth-of-type(45) {
+    transform: rotateX(360deg) translateZ(24em);
+}
+
+/*mobiele weergave*/
 @media only screen and (max-width: 600px) {
 
+/* * {
+    margin: 0 auto;
+} */
+
+.display {
+    margin: auto;
+    padding: 12em;
+    max-width: 100%;
+    background-color: green;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    justify-content: space-around;
+    margin: auto;
+
+}
+
+.slotmachine{
+    /* display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center; */
+    /* display: inline-block;
+    padding: 0;
+    position: relative;
+    width: 100%; */
     
+}
+
+
+
+
+
+
 }
