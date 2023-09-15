@@ -1,5 +1,5 @@
 :root {
-  --carousel-grootte: 18.5rem;
+  --carousel-grootte: 24rem;
 }
 
 * {
@@ -112,7 +112,7 @@ button.hover {
     transform: translateY(-2.92em) translateZ(7.07em);
 }
 
-.carousel-1 .carousel-2 .carousel-3 {
+.carousel-1, .carousel-2, .carousel-3 {
   transform-style: preserve-3d;
 }
 
