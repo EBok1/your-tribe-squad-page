@@ -338,7 +338,7 @@ li:nth-of-type(45) {
 .display {
     margin: auto;
     padding: 12em;
-    max-width: 100%;
+    max-width: 90%;
     background-color: green;
     display: flex;
     flex-direction: row;
@@ -348,18 +348,30 @@ li:nth-of-type(45) {
 
 }
 
-.slotmachine{
-    /* display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
-    align-items: center; */
-    /* display: inline-block;
-    padding: 0;
-    position: relative;
-    width: 100%; */
-    
+section, ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   padding: 0.8em;
 }
 
+.controls {
+    max-width: 90%;
+    height: 10em;
+    margin: auto;
+    padding: 3.3em;
+    background-color: lightgray;
+
+}
+
+.bottom {
+    transform-origin: top;
+    background-color: darkslategray;
+    max-width: 90%;
+    margin: auto;
+    padding: 10em;
+    transform: translateY(-2.92em) translateZ(7.07em);
+}
 
 
 
