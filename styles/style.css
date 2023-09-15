@@ -119,6 +119,19 @@ button.hover {
   transform-style: preserve-3d;
 }
 
+.start-spinning {
+  animation: draai;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+}
+
+.spinning {
+  animation: draai;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
 @keyframes draai {
     0% {
         transform: rotateX(360deg);
