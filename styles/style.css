@@ -14,6 +14,7 @@ section {
     border-style: solid;
     border-color: gold;
     border-width: 0.25em;
+
 }
 
  /* display */
@@ -25,6 +26,8 @@ section {
     display: flex;
     flex-direction: row;
     overflow: hidden;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
@@ -38,10 +41,11 @@ h1 {
 ul {
     list-style: none;
     margin: 4em;
+    
 }
 
 ul li {
-
+    margin: auto;
 }
 
 .card {
@@ -344,14 +348,20 @@ li:nth-of-type(45) {
     display: flex;
     flex-direction: row;
     overflow: hidden;
+    justify-content: space-around;
+    margin: auto;
+
 }
 
 .slotmachine{
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: flex-start;
     flex-direction: row;
-    align-items: center;
+    align-items: center; */
+    /* display: inline-block;
     padding: 0;
+    position: relative;
+    width: 100%; */
     
 }
 
