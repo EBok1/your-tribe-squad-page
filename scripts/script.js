@@ -78,4 +78,4 @@ const pickRandomFromArray = (arr) => {
     return arr[Math.floor(Math.random() * arr.length)];
 };
 
-const sleep = ms => new Promise(r => setTimeout(r, ms));
+const sleep = async (ms) => new Promise(r => setTimeout(r, ms));
