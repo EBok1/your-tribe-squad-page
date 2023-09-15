@@ -1,3 +1,5 @@
+
+/* De root gebruiken wij als variabele om de grootte van de carrousel te veranderen mocht dat nodig zijn. */
 :root {
   --carousel-grootte: 24rem;
 }
@@ -6,10 +8,12 @@
     box-sizing: border-box;
 }
 
+/* Dit is de achtergrond van de website, de gokkast komt hiervoor te staan. */
 body {
     background-image: url(../assets/casinoachtergrond.png);
 }
 
+/* In de main geven we een perspective, waardoor we de gokkast 3D kunnen maken zodra we hem transformen. */
 main {
     perspective: 100em;
 }
@@ -21,7 +25,7 @@ section {
 
 }
 
- /* display */
+ /* De class display weergeeft het bovenste deel van de gokkast met de slots daarin. */
 .display {
     margin: auto;
     padding: 14em;
@@ -47,10 +51,10 @@ ul {
     margin: 4em;
     
 }
-
+/* 
 ul li {
     margin: auto;
-}
+} */
 
 .card {
     background-color: white;
@@ -72,7 +76,7 @@ ul li {
     width: 100%;
 }
 
-.card-name {
+h2 {
     visibility: hidden;
 }
 
