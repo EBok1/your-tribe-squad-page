@@ -11,6 +11,9 @@
 /* Dit is de achtergrond van de website, de gokkast komt hiervoor te staan. */
 body {
     background-image: url(../assets/casinoachtergrond.png);
+    background-size: cover;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 /* In de main geven we een perspective, waardoor we de gokkast 3D kunnen maken zodra we hem transformen. */
