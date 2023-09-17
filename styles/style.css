@@ -30,11 +30,22 @@ section {
  /* De class display weergeeft het bovenste deel van de gokkast met de slots daarin. */
 .display {
     margin: auto;
-    padding: 14em;
+    padding: 8em;
     max-width: 50%;
     background-image: url(../assets/gokkastdesign.png);
     background-size: cover;
     background-position: center;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrouselborder {
+    border: solid gold;
+    margin: 0;
+    height: 25em;
     display: flex;
     flex-direction: row;
     overflow: hidden;
@@ -64,7 +75,6 @@ ul {
     height: 10em;
     border-left: solid gold;
     border-right: solid gold;
-    border-width: 0.35em;
 }
 
 .card > a {
@@ -101,18 +111,10 @@ h2 {
     padding: 3.3em;
 }
 
-div.playbuttons {
-
-}
-
 button {
     border-radius: 50%;    
     aspect-ratio: 1;
     cursor: pointer;
-}
-
-button.hover {
-    
 }
 
 /* De bottom is de onderkant van de kast, waar niks speciaals speelt. */
@@ -130,6 +132,7 @@ button.hover {
 /* De slotmachine heeft 3 rijen die draaien. We noemen ze per stuk een carrousel. */
 .carousel-1, .carousel-2, .carousel-3 {
   transform-style: preserve-3d;
+  transform: translateX(-5.25em);
 }
 
 /* Hierbij komen ook animaties te pas, allemaal te maken met de carrousels. */
@@ -353,7 +356,9 @@ li:nth-of-type(45) {
     margin: auto;
     padding: 12em;
     max-width: 90%;
-    background-color: darkslategray;
+    background-image: url(../assets/gokkastdesign.png);
+    background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: row;
     overflow: hidden;
@@ -374,13 +379,15 @@ section, ul{
     height: 10em;
     margin: auto;
     padding: 3.3em;
-    background-color: lightgray;
+    background-color: rgb(75, 0, 0);
 
 }
 
 .bottom {
     transform-origin: top;
-    background-color: darkslategray;
+    background-image: url(../assets/gokkastdesign.png);
+    background-size: cover;
+    background-position: center;
     max-width: 90%;
     margin: auto;
     padding: 10em;
