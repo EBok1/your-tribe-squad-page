@@ -44,7 +44,7 @@ section {
 
 .carrouselborder {
     border: solid gold;
-    margin: 0;
+    margin: 0 -5em 0 -5em;
     height: 25em;
     display: flex;
     flex-direction: row;
@@ -354,7 +354,7 @@ li:nth-of-type(45) {
 
 .display {
     margin: auto;
-    padding: 12em;
+    padding: 8em;
     max-width: 90%;
     background-image: url(../assets/gokkastdesign.png);
     background-size: cover;
@@ -364,14 +364,23 @@ li:nth-of-type(45) {
     overflow: hidden;
     justify-content: space-around;
     margin: auto;
+}
 
+.carrouselborder {
+    border: solid gold;
+    height: 25em;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
 }
 
 section, ul{
     display: flex;
     justify-content: space-around;
     align-items: center;
-   padding: 0.8em;
+    padding: 0.8em;
 }
 
 .controls {
