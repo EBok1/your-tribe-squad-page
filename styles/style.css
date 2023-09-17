@@ -348,10 +348,6 @@ li:nth-of-type(45) {
 /* Vanaf dit punt gaan we werken aan de mobiele weergave van de website. */
 @media only screen and (max-width: 600px) {
 
-/* * {
-    margin: 0 auto;
-} */
-
 .display {
     margin: auto;
     padding: 8em;
