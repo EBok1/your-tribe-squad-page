@@ -22,7 +22,6 @@ section {
     border-style: solid;
     border-color: gold;
     border-width: 0.25em;
-
 }
 
  /* De class display weergeeft het bovenste deel van de gokkast met de slots daarin. */
@@ -30,7 +29,9 @@ section {
     margin: auto;
     padding: 14em;
     max-width: 50%;
-    background-color: green;
+    background-image: url(../assets/gokkastdesign.png);
+    background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: row;
     overflow: hidden;
@@ -39,11 +40,10 @@ section {
 }
 
 h1 {
-    /* font-size: 5em;
-    background: linear-gradient(to bottom, gold, brown);
+    font-size: 3em;
+    background: linear-gradient(to bottom, white, grey);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    display: inline-block; */
 }
 
 ul {
@@ -51,11 +51,8 @@ ul {
     margin: 4em;
     
 }
-/* 
-ul li {
-    margin: auto;
-} */
 
+/* Deze properties beschikken over elke losse afbeelding die gebruikt word in de slots. */
 .card {
     background-color: white;
     display: block;
@@ -70,6 +67,7 @@ ul li {
 .card > a {
   display: flex;
   flex-direction: column;
+  text-decoration: none;
 }
 
 .card-photo {
@@ -77,16 +75,21 @@ ul li {
 }
 
 h2 {
-    visibility: hidden;
+    color: gold;
+    font-size: 1.3em;
+    text-decoration: none;
+    position: absolute;
+    transform: translateY(6em);
+    margin-left: 0.2em;
 }
 
 .selected {
     background-color: greenyellow;
 }
 
-/* controls */
+/* Vanaf dit punt kijken we naar het middelste vlak, waar de controls van de kast zitten. */
 .controls {
-    background-color: red;
+    background-color: rgb(75, 0, 0);
     transform-origin: center top;
     transform: rotateX(45deg);
     height: 10em;
@@ -109,20 +112,24 @@ button.hover {
     
 }
 
-/* bottom */
+/* De bottom is de onderkant van de kast, waar niks speciaals speelt. */
 .bottom {
     transform-origin: top;
-    background-color: blue;
+    background-image: url(../assets/gokkastdesign.png);
+    background-size: cover;
+    background-position: center;
     max-width: 50%;
     margin: auto;
-    padding: 10em;
+    padding: 18.5em;
     transform: translateY(-2.92em) translateZ(7.07em);
 }
 
+/* De slotmachine heeft 3 rijen die draaien. We noemen ze per stuk een carrousel. */
 .carousel-1, .carousel-2, .carousel-3 {
   transform-style: preserve-3d;
 }
 
+/* Hierbij komen ook animaties te pas, allemaal te maken met de carrousels. */
 .start-spinning {
   animation: draai;
   animation-duration: 2s;
@@ -145,7 +152,8 @@ button.hover {
     }
 }
 
-/* slot1 */
+/* De volgende zeëen aan code zijn om de carrousel 3D en rond te maken om te draaien. */
+/* Carrousel 1 */
 li:nth-of-type(1) {
     transform: rotateX(24deg) translateZ(24em);
 }
@@ -208,7 +216,7 @@ li:nth-of-type(15) {
 
 
 
-/* slot2 */
+/* Carrousel 2 */
 li:nth-of-type(16) {
     transform: rotateX(24deg) translateZ(24em);
 }
@@ -270,7 +278,7 @@ li:nth-of-type(30) {
 }
 
 
-/* slot3 */
+/* Carrousel 3 */
 li:nth-of-type(31) {
     transform: rotateX(24deg) translateZ(24em);
 }
@@ -331,7 +339,7 @@ li:nth-of-type(45) {
     transform: rotateX(360deg) translateZ(24em);
 }
 
-/*mobiele weergave*/
+/* Vanaf dit punt gaan we werken aan de mobiele weergave van de website. */
 @media only screen and (max-width: 600px) {
 
 /* * {
@@ -342,7 +350,7 @@ li:nth-of-type(45) {
     margin: auto;
     padding: 12em;
     max-width: 90%;
-    background-color: green;
+    background-color: darkslategray;
     display: flex;
     flex-direction: row;
     overflow: hidden;
