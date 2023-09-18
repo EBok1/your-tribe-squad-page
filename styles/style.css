@@ -8,8 +8,12 @@
 }
 
 /* Dit is de achtergrond van de website, de gokkast komt hiervoor te staan. */
+
 body {
+<<<<<<< Updated upstream
   background-color: grey;
+=======
+>>>>>>> Stashed changes
   background-size: cover;
   overflow-y: hidden;
   overflow-x: hidden;
