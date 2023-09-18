@@ -10,13 +10,8 @@
 /* Dit is de achtergrond van de website, de gokkast komt hiervoor te staan. */
 
 body {
-<<<<<<< Updated upstream
-  background-color: grey;
-=======
->>>>>>> Stashed changes
-  background-size: cover;
-  overflow-y: hidden;
-  overflow-x: hidden;
+  background-image: url(../assets/achtergrondgokkast.png);
+  background-size: 100%;
 }
 
 /* In de main geven we een perspective, waardoor we de gokkast 3D kunnen maken zodra we hem transformen. */
@@ -65,6 +60,7 @@ h1 {
     color: gold;
     float: right;
     margin: auto;
+    text-shadow: 0 0.1em darkgoldenrod;
 }
 
 ul {
@@ -112,7 +108,7 @@ h2 {
   background-color: rgb(136, 136, 136);
   transform-origin: center top;
   transform: rotateX(45deg);
-  height: 10em;
+  height: 12em;
   max-width: 60%;
   margin: auto;
   padding: 3.3em;
@@ -134,10 +130,10 @@ h2 {
 	-o-border-radius: 50%;
 		border-radius: 50%;
 	background-color: red;
-	-webkit-box-shadow:  0 .2em maroon;
-	-moz-box-shadow:  0 .2em maroon;
-	-o-box-shadow:  0 .2em maroon;
-	box-shadow:  0 .2em maroon;
+	-webkit-box-shadow:  0 .3em maroon;
+	-moz-box-shadow:  0 .3em maroon;
+	-o-box-shadow:  0 .3em maroon;
+	box-shadow:  0 .3em maroon;
 	color: white;
 	margin: auto;
 	background-color: red;
@@ -147,6 +143,7 @@ h2 {
 	background-image: linear-gradient(left top, pink 3%, red 22%, maroon 99%);
 	cursor: pointer;
     font-size: 1.8em;
+    padding: 0.4em;
     margin-right: 1em;
  
 
@@ -165,7 +162,7 @@ h2 {
   -moz-border-radius: 7px;
   -o-border-radius: 7px;
   border-radius: 7px;
-  box-shadow: 0 0.2em gray;
+  box-shadow: 0 0.3em rgb(87, 85, 85);
   cursor: pointer;
   font-size: 2.1em;
   
@@ -187,7 +184,7 @@ h2 {
   max-width: 60%;
   margin: auto;
   padding: 18.5em;
-  transform: translateY(-2.92em) translateZ(7.07em);
+  transform: translateY(-3.62em) translateZ(8.39em);
 }
 
 /* De slotmachine heeft 3 rijen die draaien. We noemen ze per stuk een carrousel. */
