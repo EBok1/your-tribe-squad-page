@@ -21,17 +21,9 @@ window.onload = () => {
   cardsArray1 = arrayFromList('.carousel-1 > li');
   cardsArray2 = arrayFromList('.carousel-2 > li');
   cardsArray3 = arrayFromList('.carousel-3 > li');
-
-  // const spinButton = document.getElementById('button-spin');
-
-  // spinButton.addEventListener('click', pickRandomCards(
-  //   cardsArray1,
-  //   cardsArray2,
-  //   cardsArray3
-  // ));
 };
 
-const pickRandomCards = (arr1, arr2, arr3) => {
+const pickRandomCards = async (arr1, arr2, arr3) => {
   // Remove selected class from all cards
   var selectedCards = document.querySelectorAll('.selected');
   
@@ -39,23 +31,17 @@ const pickRandomCards = (arr1, arr2, arr3) => {
     element.classList.remove('selected');
   });
 
-  // Add animation class to each carousel
-  carousel1.classList.add('start-spinning');
-  carousel2.classList.add('start-spinning');
-  carousel3.classList.add('start-spinning');
+  changeSpinState(carousel1, "start");
+  changeSpinState(carousel2, "start");
+  changeSpinState(carousel3, "start");
 
-  // Wait for 2 seconds so animation finishes
-  sleep(2000);
+  await sleep(2000);
 
-  carousel1.classList.remove('start-spinning');
-  carousel2.classList.remove('start-spinning');
-  carousel3.classList.remove('start-spinning');
+  changeSpinState(carousel1, "continue");
+  changeSpinState(carousel2, "continue");
+  changeSpinState(carousel3, "continue");
 
-  carousel1.classList.add('spinning');
-  carousel2.classList.add('spinning');
-  carousel3.classList.add('spinning');
-
-
+  await sleep(6000);
   
   // Choose random cards from each array
   var selectedCard1 = pickRandomFromArray(arr1);
@@ -67,11 +53,46 @@ const pickRandomCards = (arr1, arr2, arr3) => {
   selectedCard2.classList.add('selected');
   selectedCard3.classList.add('selected');
   
-  var cardPosition1 = findSelectedCardPosition(carousel1, selectedCard1);
-  var cardPosition2 = findSelectedCardPosition(carousel2, selectedCard2);
-  var cardPosition3 = findSelectedCardPosition(carousel3, selectedCard3);
+  var cardPosition1 = 360/15*findSelectedCardPosition(carousel1, selectedCard1);
+  var cardPosition2 = 360/15*findSelectedCardPosition(carousel2, selectedCard2);
+  var cardPosition3 = 360/15*findSelectedCardPosition(carousel3, selectedCard3);
 
 
+  changeSpinState(carousel1, "stop");
+  carousel1.style.transform = "translateX(-7.28em) rotateX(" + cardPosition1 + "deg)";
+  console.log(cardPosition1);
+
+  await sleep(1000);
+
+  changeSpinState(carousel2, "stop");
+  carousel2.style.transform = "translateX(-7.28em) rotateX(" + cardPosition2 + "deg)";
+  console.log(cardPosition2);
+
+  await sleep(1000);
+
+  changeSpinState(carousel3, "stop");
+  carousel3.style.transform = "translateX(-7.28em) rotateX(" + cardPosition3 + "deg)";
+  console.log(cardPosition3);
+};
+
+const changeSpinState = (element, state) => {
+  switch(state){
+    case "start":
+      // Add animation class to each carousel
+      element.classList.add('start-spinning');
+      break;
+    case "continue":
+      // Remove previous animation class on each carousel
+      element.classList.remove('start-spinning');
+
+      // Add animation class to each carousel
+      element.classList.add('spinning');
+      break;
+    case "stop":
+      // Remove previous animation class on each carousel
+      element.classList.remove('spinning');
+      break;
+  }
 };
 
 const findSelectedCardPosition = (parent, selected) => {
@@ -79,7 +100,7 @@ const findSelectedCardPosition = (parent, selected) => {
   return children.indexOf(selected);
 };
 
-const arrayFromList = (selector) => {
+const arrayFromList = selector => {
   var children = document.querySelectorAll(selector);
   return Array.from(children);
 };

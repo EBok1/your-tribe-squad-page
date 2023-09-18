@@ -192,7 +192,8 @@ h2 {
 .carousel-2,
 .carousel-3 {
   transform-style: preserve-3d;
-  transform: translateX(-7.28em);
+  transform: translateX(-7.28em) rotateX(14deg);
+  transition: 2s;
 }
 
 /* Hierbij komen ook animaties te pas, allemaal te maken met de carrousels. */
@@ -210,12 +211,12 @@ h2 {
 }
 
 @keyframes draai {
-  0% {
-    transform: rotateX(360deg);
-  }
-  100% {
-    transform: rotateX(0deg);
-  }
+    0% {
+        transform: translateX(-7.28em) rotateX(360deg);
+    }
+    100% {
+        transform: translateX(-7.28em) rotateX(0deg);
+    }
 }
 
 /* De volgende zeëen aan code zijn om de carrousel 3D en rond te maken om te draaien. */
