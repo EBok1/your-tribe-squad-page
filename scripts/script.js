@@ -5,7 +5,17 @@ var cardsArray3 = [];
 const carousel1 = document.querySelector('.carousel-1');
 const carousel2 = document.querySelector('.carousel-2');
 const carousel3 = document.querySelector('.carousel-3');
+const spinbutton = document.querySelector('.spin-btn');
 
+spinbutton.addEventListener('click', slotmuziek);
+
+function slotmuziek() {
+  var audiobestand = document.getElementById('slotmuziek');
+  audiobestand.play();
+} ;
+
+
+  
 window.onload = () => {
   // Initialize the card arrays on page load
   cardsArray1 = arrayFromList('.carousel-1 > li');
