@@ -170,13 +170,9 @@ button {
 	top: .2em;
 }
 
-}
-.video-game-button:active, .start-btn:active {
-	box-shadow: none;
-	position: relative;
-	top: .2em;
-}
-}
+
+
+
 
 /* De bottom is de onderkant van de kast, waar niks speciaals speelt. */
 .bottom {
