@@ -1,82 +1,84 @@
-
 /* De root gebruiken wij als variabele om de grootte van de carrousel te veranderen mocht dat nodig zijn. */
 :root {
   --carousel-grootte: 24rem;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Dit is de achtergrond van de website, de gokkast komt hiervoor te staan. */
 body {
-    background-image: url(../assets/casinoachtergrond.png);
-    background-size: cover;
-    overflow-y: hidden;
-    overflow-x: hidden;
+  background-image: url(../assets/casinoachtergrond.png);
+  background-size: cover;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 /* In de main geven we een perspective, waardoor we de gokkast 3D kunnen maken zodra we hem transformen. */
 main {
-    perspective: 100em;
-    
+  perspective: 100em;
 }
 
 section {
-    border-style: solid;
-    border-color: gold;
-    border-width: 0.25em;
+  border-style: solid;
+  border-color: gold;
+  border-width: 0.25em;
 }
 
- /* De class display weergeeft het bovenste deel van de gokkast met de slots daarin. */
+/* De class display weergeeft het bovenste deel van de gokkast met de slots daarin. */
 .display {
-    margin: auto;
-    margin-top: 2em;
-    padding: 2em;
-    max-width: 60%;
-    background: linear-gradient(to bottom, rgb(75, 0, 0), rgb(243, 80, 30), rgb(75, 0, 0));
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
-    justify-content: center;
-    align-items: center;
+  margin: auto;
+  margin-top: 2em;
+  padding: 2em;
+  max-width: 60%;
+  background: linear-gradient(
+    to bottom,
+    rgb(75, 0, 0),
+    rgb(243, 80, 30),
+    rgb(75, 0, 0)
+  );
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
 }
 
 .carrouselborder {
-    border: solid gold;
-    margin: 0 -5em 0 -5em;
-    height: 25em;
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
-    justify-content: center;
-    align-items: center;
+  border: solid gold;
+  margin: 0 -5em 0 -5em;
+  height: 25em;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
-    font-size: 3em;
-    background: linear-gradient(to bottom, white, grey);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;   
+  font-size: 3em;
+  background: linear-gradient(to bottom, white, grey);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 ul {
-    list-style: none;
-    margin: 4em;
-    
+  list-style: none;
+  margin: 4em;
 }
 
 /* Deze properties beschikken over elke losse afbeelding die gebruikt word in de slots. */
 .card {
-    background-color: white;
-    display: block;
-    position: absolute;
-    width: 8em;
-    height: 10em;
-    border-left: solid gold;
-    border-right: solid gold;
+  background-color: white;
+  display: block;
+  position: absolute;
+  width: 8em;
+  height: 10em;
+  border-left: solid gold;
+  border-right: solid gold;
 }
 
 .card > a {
@@ -86,112 +88,118 @@ ul {
 }
 
 .card-photo {
-    width: 100%;
+  width: 100%;
 }
 
 h2 {
-    color: gold;
-    font-size: 1.3em;
-    text-decoration: none;
-    position: absolute;
-    transform: translateY(6em);
-    margin-left: 0.2em;
+  color: gold;
+  font-size: 1.3em;
+  text-decoration: none;
+  position: absolute;
+  transform: translateY(6em);
+  margin-left: 0.2em;
 }
 
 .selected {
-    background-color: greenyellow;
+  background-color: greenyellow;
 }
 
 /* Vanaf dit punt kijken we naar het middelste vlak, waar de controls van de kast zitten. */
 .controls {
-    background-color: rgb(75, 0, 0);
-    transform-origin: center top;
-    transform: rotateX(45deg);
-    height: 10em;
-    max-width: 60%;
-    margin: auto;
-    padding: 3.3em;
+  background-color: rgb(75, 0, 0);
+  transform-origin: center top;
+  transform: rotateX(45deg);
+  height: 10em;
+  max-width: 60%;
+  margin: auto;
+  padding: 3.3em;
 }
 
 .spin-btn {
-    text-shadow: 1px 1px pink, -1px -1px maroon;
-	line-height: 1.5em;
-	text-align: center;
-<<<<<<< Updated upstream
-	display: inline-block;
-=======
->>>>>>> Stashed changes
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	-o-border-radius: 50%;
-		border-radius: 50%;
-	background-color: red;
-	-webkit-box-shadow:  0 .2em maroon;
-	-moz-box-shadow:  0 .2em maroon;
-	-o-box-shadow:  0 .2em maroon;
-	box-shadow:  0 .2em maroon;
-	color: white;
-<<<<<<< Updated upstream
-	margin: auto;
-=======
->>>>>>> Stashed changes
-	background-color: red;
-	background-image: -o-linear-gradient(left top, pink 3%, red 22%, maroon 99%);
-	background-image: -moz-linear-gradient(left top, pink 3%, red 22%, maroon 99%);
-	background-image: -webkit-linear-gradient(left top, pink 3%, red 22%, maroon 99%);
-	background-image: linear-gradient(left top, pink 3%, red 22%, maroon 99%);
-	cursor: pointer;
-<<<<<<< Updated upstream
+  text-shadow: 1px 1px pink, -1px -1px maroon;
+  line-height: 1.5em;
+  text-align: center;
+
+  display: inline-block;
+
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background-color: red;
+  -webkit-box-shadow: 0 0.2em maroon;
+  -moz-box-shadow: 0 0.2em maroon;
+  -o-box-shadow: 0 0.2em maroon;
+  box-shadow: 0 0.2em maroon;
+  color: white;
+
+  margin: auto;
+
+  background-color: red;
+  background-image: -o-linear-gradient(left top, pink 3%, red 22%, maroon 99%);
+  background-image: -moz-linear-gradient(
+    left top,
+    pink 3%,
+    red 22%,
+    maroon 99%
+  );
+  background-image: -webkit-linear-gradient(
+    left top,
+    pink 3%,
+    red 22%,
+    maroon 99%
+  );
+  background-image: linear-gradient(left top, pink 3%, red 22%, maroon 99%);
+  cursor: pointer;
+
   font-size: 1.3em;
-=======
+
   font-size: 1.25em;
   padding: 0.5em;
-  margin: auto
->>>>>>> Stashed changes
+  margin: auto;
 }
 
-.swap-btn{
-    text-align: center;
-	display: inline-block;
-	margin:5px;
-    font-weight: bold;
-    padding: 10px ;
-    background-color: lightgray;
-    text-shadow: -1px -1px black, 1px 1px white;
-    color: gray;
-    -webkit-border-radius: 7px;
-	-moz-border-radius: 7px;
-	-o-border-radius: 7px;
-	border-radius: 7px;
-    box-shadow: 0 .2em gray; 
-    cursor: pointer;
-    font-size: 1.25em;
+.swap-btn {
+  text-align: center;
+  display: inline-block;
+  margin: 5px;
+  font-weight: bold;
+  padding: 10px;
+  background-color: lightgray;
+  text-shadow: -1px -1px black, 1px 1px white;
+  color: gray;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+  box-shadow: 0 0.2em gray;
+  cursor: pointer;
+  font-size: 1.25em;
 }
 
-.spin-btn:active, .swap-btn:active {
-	box-shadow: none;
-	position: relative;
-	top: .2em;
+.spin-btn:active,
+.swap-btn:active {
+  box-shadow: none;
+  position: relative;
+  top: 0.2em;
 }
-
-
-
-
 
 /* De bottom is de onderkant van de kast, waar niks speciaals speelt. */
 .bottom {
-    transform-origin: top;
-    background: rgb(75, 0, 0);
-    background-size: cover;
-    background-position: center;
-    max-width: 60%;
-    margin: auto;
-    padding: 18.5em;
-    transform: translateY(-2.92em) translateZ(7.07em);
+  transform-origin: top;
+  background: rgb(75, 0, 0);
+  background-size: cover;
+  background-position: center;
+  max-width: 60%;
+  margin: auto;
+  padding: 18.5em;
+  transform: translateY(-2.92em) translateZ(7.07em);
 }
 
 /* De slotmachine heeft 3 rijen die draaien. We noemen ze per stuk een carrousel. */
-.carousel-1, .carousel-2, .carousel-3 {
+.carousel-1,
+.carousel-2,
+.carousel-3 {
   transform-style: preserve-3d;
   transform: translateX(-5.25em);
 }
@@ -211,205 +219,201 @@ h2 {
 }
 
 @keyframes draai {
-    0% {
-        transform: rotateX(360deg);
-    }
-    100% {
-        transform: rotateX(0deg);
-    }
+  0% {
+    transform: rotateX(360deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
 }
 
 /* De volgende zeëen aan code zijn om de carrousel 3D en rond te maken om te draaien. */
 /* Carrousel 1 */
 li:nth-of-type(1) {
-    transform: rotateX(24deg) translateZ(24em);
+  transform: rotateX(24deg) translateZ(24em);
 }
 
 li:nth-of-type(2) {
-    transform: rotateX(48deg) translateZ(24em);
+  transform: rotateX(48deg) translateZ(24em);
 }
 
 li:nth-of-type(3) {
-    transform: rotateX(72deg) translateZ(24em);
+  transform: rotateX(72deg) translateZ(24em);
 }
 
 li:nth-of-type(4) {
-    transform: rotateX(96deg) translateZ(24em);
+  transform: rotateX(96deg) translateZ(24em);
 }
 
 li:nth-of-type(5) {
-    transform: rotateX(120deg) translateZ(24em);
+  transform: rotateX(120deg) translateZ(24em);
 }
 
 li:nth-of-type(6) {
-    transform: rotateX(144deg) translateZ(24em);
+  transform: rotateX(144deg) translateZ(24em);
 }
 
 li:nth-of-type(7) {
-    transform: rotateX(168deg) translateZ(24em);
+  transform: rotateX(168deg) translateZ(24em);
 }
 
 li:nth-of-type(8) {
-    transform: rotateX(192deg) translateZ(24em);
+  transform: rotateX(192deg) translateZ(24em);
 }
 
 li:nth-of-type(9) {
-    transform: rotateX(216deg) translateZ(24em);
+  transform: rotateX(216deg) translateZ(24em);
 }
 
 li:nth-of-type(10) {
-    transform: rotateX(240deg) translateZ(24em);
+  transform: rotateX(240deg) translateZ(24em);
 }
 
 li:nth-of-type(11) {
-    transform: rotateX(264deg) translateZ(24em);
+  transform: rotateX(264deg) translateZ(24em);
 }
 
 li:nth-of-type(12) {
-    transform: rotateX(288deg) translateZ(24em);
+  transform: rotateX(288deg) translateZ(24em);
 }
 
 li:nth-of-type(13) {
-    transform: rotateX(312deg) translateZ(24em);
+  transform: rotateX(312deg) translateZ(24em);
 }
 
 li:nth-of-type(14) {
-    transform: rotateX(336deg) translateZ(24em);
+  transform: rotateX(336deg) translateZ(24em);
 }
 
 li:nth-of-type(15) {
-    transform: rotateX(360deg) translateZ(24em);
+  transform: rotateX(360deg) translateZ(24em);
 }
-
-
 
 /* Carrousel 2 */
 li:nth-of-type(16) {
-    transform: rotateX(24deg) translateZ(24em);
+  transform: rotateX(24deg) translateZ(24em);
 }
 
 li:nth-of-type(17) {
-    transform: rotateX(48deg) translateZ(24em);
-}   
+  transform: rotateX(48deg) translateZ(24em);
+}
 
 li:nth-of-type(18) {
-    transform: rotateX(72deg) translateZ(24em);
+  transform: rotateX(72deg) translateZ(24em);
 }
 
 li:nth-of-type(19) {
-    transform: rotateX(96deg) translateZ(24em);
+  transform: rotateX(96deg) translateZ(24em);
 }
 
 li:nth-of-type(20) {
-    transform: rotateX(120deg) translateZ(24em);
+  transform: rotateX(120deg) translateZ(24em);
 }
 
 li:nth-of-type(21) {
-    transform: rotateX(144deg) translateZ(24em);
+  transform: rotateX(144deg) translateZ(24em);
 }
 
 li:nth-of-type(22) {
-    transform: rotateX(168deg) translateZ(24em);
+  transform: rotateX(168deg) translateZ(24em);
 }
 
 li:nth-of-type(23) {
-    transform: rotateX(192deg) translateZ(24em);
+  transform: rotateX(192deg) translateZ(24em);
 }
 
 li:nth-of-type(24) {
-    transform: rotateX(216deg) translateZ(24em);
+  transform: rotateX(216deg) translateZ(24em);
 }
 
 li:nth-of-type(25) {
-    transform: rotateX(240deg) translateZ(24em);
+  transform: rotateX(240deg) translateZ(24em);
 }
 
 li:nth-of-type(26) {
-    transform: rotateX(264deg) translateZ(24em);
+  transform: rotateX(264deg) translateZ(24em);
 }
 
 li:nth-of-type(27) {
-    transform: rotateX(288deg) translateZ(24em);
+  transform: rotateX(288deg) translateZ(24em);
 }
 
 li:nth-of-type(28) {
-    transform: rotateX(312deg) translateZ(24em);
+  transform: rotateX(312deg) translateZ(24em);
 }
 
 li:nth-of-type(29) {
-    transform: rotateX(336deg) translateZ(24em);
+  transform: rotateX(336deg) translateZ(24em);
 }
 
 li:nth-of-type(30) {
-    transform: rotateX(360deg) translateZ(24em);
+  transform: rotateX(360deg) translateZ(24em);
 }
-
 
 /* Carrousel 3 */
 li:nth-of-type(31) {
-    transform: rotateX(24deg) translateZ(24em);
+  transform: rotateX(24deg) translateZ(24em);
 }
 
 li:nth-of-type(32) {
-    transform: rotateX(48deg) translateZ(24em);
+  transform: rotateX(48deg) translateZ(24em);
 }
 
 li:nth-of-type(33) {
-    transform: rotateX(72deg) translateZ(24em);
+  transform: rotateX(72deg) translateZ(24em);
 }
 
 li:nth-of-type(34) {
-    transform: rotateX(96deg) translateZ(24em);
+  transform: rotateX(96deg) translateZ(24em);
 }
 
 li:nth-of-type(35) {
-    transform: rotateX(120deg) translateZ(24em);
+  transform: rotateX(120deg) translateZ(24em);
 }
 
 li:nth-of-type(36) {
-    transform: rotateX(144deg) translateZ(24em);
+  transform: rotateX(144deg) translateZ(24em);
 }
 
 li:nth-of-type(37) {
-    transform: rotateX(168deg) translateZ(24em);
+  transform: rotateX(168deg) translateZ(24em);
 }
 
 li:nth-of-type(38) {
-    transform: rotateX(192deg) translateZ(24em);
+  transform: rotateX(192deg) translateZ(24em);
 }
 
 li:nth-of-type(39) {
-    transform: rotateX(216deg) translateZ(24em);
+  transform: rotateX(216deg) translateZ(24em);
 }
 
 li:nth-of-type(40) {
-    transform: rotateX(240deg) translateZ(24em);
+  transform: rotateX(240deg) translateZ(24em);
 }
 
 li:nth-of-type(41) {
-    transform: rotateX(264deg) translateZ(24em);
+  transform: rotateX(264deg) translateZ(24em);
 }
 
 li:nth-of-type(42) {
-    transform: rotateX(288deg) translateZ(24em);
+  transform: rotateX(288deg) translateZ(24em);
 }
 
 li:nth-of-type(43) {
-    transform: rotateX(312deg) translateZ(24em);
+  transform: rotateX(312deg) translateZ(24em);
 }
 
 li:nth-of-type(44) {
-    transform: rotateX(336deg) translateZ(24em);
+  transform: rotateX(336deg) translateZ(24em);
 }
 
 li:nth-of-type(45) {
-    transform: rotateX(360deg) translateZ(24em);
+  transform: rotateX(360deg) translateZ(24em);
 }
 
 /* Vanaf dit punt gaan we werken aan de mobiele weergave van de website. */
 @media only screen and (max-width: 600px) {
-
-.display {
+  .display {
     margin: auto;
     padding: 8em;
     max-width: 90%;
@@ -421,9 +425,9 @@ li:nth-of-type(45) {
     overflow: hidden;
     justify-content: space-around;
     margin: auto;
-}
+  }
 
-.carrouselborder {
+  .carrouselborder {
     border: solid gold;
     height: 25em;
     display: flex;
@@ -431,26 +435,25 @@ li:nth-of-type(45) {
     overflow: hidden;
     justify-content: center;
     align-items: center;
-}
+  }
 
-section, ul{
+  section,
+  ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0.8em;
-    
-}
+  }
 
-.controls {
+  .controls {
     max-width: 90%;
     height: 10em;
     margin: auto;
     padding: 3.3em;
     background-color: rgb(75, 0, 0);
+  }
 
-}
-
-.bottom {
+  .bottom {
     transform-origin: top;
     background-image: url(../assets/gokkastdesign.png);
     background-size: cover;
@@ -459,10 +462,5 @@ section, ul{
     margin: auto;
     padding: 10em;
     transform: translateY(-2.92em) translateZ(7.07em);
-}
-
-
-
-
-
+  }
 }
