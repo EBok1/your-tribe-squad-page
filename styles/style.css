@@ -125,8 +125,7 @@ button {
 
 	line-height: 1.5em;
 	text-align: center;
-	/* display: inline-block; */
-	
+	display: inline-block;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	-o-border-radius: 50%;
@@ -137,14 +136,14 @@ button {
 	-o-box-shadow:  0 .2em maroon;
 	box-shadow:  0 .2em maroon;
 	color: white;
-	margin: 5px;
+	margin: auto;
 	background-color: red;
 	background-image: -o-linear-gradient(left top, pink 3%, red 22%, maroon 99%);
 	background-image: -moz-linear-gradient(left top, pink 3%, red 22%, maroon 99%);
 	background-image: -webkit-linear-gradient(left top, pink 3%, red 22%, maroon 99%);
 	background-image: linear-gradient(left top, pink 3%, red 22%, maroon 99%);
 	cursor: pointer;
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 .swap-btn{
