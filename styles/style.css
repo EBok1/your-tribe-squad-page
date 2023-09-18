@@ -9,7 +9,7 @@
 
 /* Dit is de achtergrond van de website, de gokkast komt hiervoor te staan. */
 body {
-  background-image: url(../assets/casinoachtergrond.png);
+  background-color: grey;
   background-size: cover;
   overflow-y: hidden;
   overflow-x: hidden;
@@ -21,9 +21,8 @@ main {
 }
 
 section {
-  border-style: solid;
-  border-color: gold;
-  border-width: 0.25em;
+  border: solid black;
+  border-width: 10px;
 }
 
 /* De class display weergeeft het bovenste deel van de gokkast met de slots daarin. */
@@ -32,12 +31,8 @@ section {
   margin-top: 2em;
   padding: 2em;
   max-width: 60%;
-  background: linear-gradient(
-    to bottom,
-    rgb(75, 0, 0),
-    rgb(243, 80, 30),
-    rgb(75, 0, 0)
-  );
+  
+ background-color: rgb(190, 188, 188);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -45,10 +40,14 @@ section {
   overflow: hidden;
   justify-content: center;
   align-items: center;
+  border-radius: 20px 20px 0 0;
 }
 
 .carrouselborder {
-  border: solid gold;
+  background-color: black;
+  border: solid black;
+  border-width: 10px;
+  border-radius: 10px;
   margin: 0 -5em 0 -5em;
   height: 25em;
   display: flex;
@@ -67,7 +66,7 @@ h1 {
 
 ul {
   list-style: none;
-  margin: 4em;
+  margin: 5em;
 }
 
 /* Deze properties beschikken over elke losse afbeelding die gebruikt word in de slots. */
@@ -75,10 +74,9 @@ ul {
   background-color: white;
   display: block;
   position: absolute;
-  width: 8em;
-  height: 10em;
-  border-left: solid gold;
-  border-right: solid gold;
+  width: 12em;
+  height: 0;
+  
 }
 
 .card > a {
@@ -88,11 +86,13 @@ ul {
 }
 
 .card-photo {
-  width: 100%;
+    border-bottom: solid black;
+    border-width: 7px;
+    width: 100%;
 }
 
 h2 {
-  color: gold;
+  color: white;
   font-size: 1.3em;
   text-decoration: none;
   position: absolute;
@@ -106,7 +106,7 @@ h2 {
 
 /* Vanaf dit punt kijken we naar het middelste vlak, waar de controls van de kast zitten. */
 .controls {
-  background-color: rgb(75, 0, 0);
+  background-color: rgb(136, 136, 136);
   transform-origin: center top;
   transform: rotateX(45deg);
   height: 10em;
@@ -187,7 +187,7 @@ h2 {
 /* De bottom is de onderkant van de kast, waar niks speciaals speelt. */
 .bottom {
   transform-origin: top;
-  background: rgb(75, 0, 0);
+  background: rgb(87, 85, 85);
   background-size: cover;
   background-position: center;
   max-width: 60%;
@@ -201,7 +201,7 @@ h2 {
 .carousel-2,
 .carousel-3 {
   transform-style: preserve-3d;
-  transform: translateX(-5.25em);
+  transform: translateX(-7.28em);
 }
 
 /* Hierbij komen ook animaties te pas, allemaal te maken met de carrousels. */
@@ -230,27 +230,27 @@ h2 {
 /* De volgende zeëen aan code zijn om de carrousel 3D en rond te maken om te draaien. */
 /* Carrousel 1 */
 li:nth-of-type(1) {
-  transform: rotateX(24deg) translateZ(24em);
+  transform: rotateX(24deg) translateZ(40em);
 }
 
 li:nth-of-type(2) {
-  transform: rotateX(48deg) translateZ(24em);
+  transform: rotateX(48deg) translateZ(40em);
 }
 
 li:nth-of-type(3) {
-  transform: rotateX(72deg) translateZ(24em);
+  transform: rotateX(72deg) translateZ(40em);
 }
 
 li:nth-of-type(4) {
-  transform: rotateX(96deg) translateZ(24em);
+  transform: rotateX(96deg) translateZ(40em);
 }
 
 li:nth-of-type(5) {
-  transform: rotateX(120deg) translateZ(24em);
+  transform: rotateX(120deg) translateZ(40em);
 }
 
 li:nth-of-type(6) {
-  transform: rotateX(144deg) translateZ(24em);
+  transform: rotateX(144deg) translateZ(40em);
 }
 
 li:nth-of-type(7) {
