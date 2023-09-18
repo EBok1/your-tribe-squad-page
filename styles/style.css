@@ -31,8 +31,9 @@ section {
  /* De class display weergeeft het bovenste deel van de gokkast met de slots daarin. */
 .display {
     margin: auto;
-    padding: 8em;
-    max-width: 50%;
+    margin-top: 2em;
+    padding: 2em;
+    max-width: 60%;
     background: linear-gradient(to bottom, rgb(75, 0, 0), rgb(243, 80, 30), rgb(75, 0, 0));
     background-size: cover;
     background-position: center;
