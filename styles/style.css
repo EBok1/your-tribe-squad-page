@@ -116,6 +116,7 @@ h2 {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  gap: 1.5em;
 
 }
 
@@ -439,7 +440,8 @@ li:nth-of-type(45) {
     background-color: rgb(75, 0, 0);
     display: flex;
     justify-content: center;
-    flex-direction: column-reverse;
+    flex-direction: column;
+    gap: 1.5em;
 
   }
 
