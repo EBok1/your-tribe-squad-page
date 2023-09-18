@@ -19,6 +19,7 @@ body {
 /* In de main geven we een perspective, waardoor we de gokkast 3D kunnen maken zodra we hem transformen. */
 main {
     perspective: 100em;
+    
 }
 
 section {
@@ -32,7 +33,7 @@ section {
     margin: auto;
     padding: 8em;
     max-width: 50%;
-    background-image: url(../assets/gokkastdesign.png);
+    background: linear-gradient(to bottom, rgb(75, 0, 0), rgb(243, 80, 30), rgb(75, 0, 0));
     background-size: cover;
     background-position: center;
     display: flex;
@@ -120,7 +121,7 @@ button {
 /* De bottom is de onderkant van de kast, waar niks speciaals speelt. */
 .bottom {
     transform-origin: top;
-    background-image: url(../assets/gokkastdesign.png);
+    background: rgb(75, 0, 0);
     background-size: cover;
     background-position: center;
     max-width: 50%;
