@@ -107,7 +107,7 @@ h2 {
     transform-origin: center top;
     transform: rotateX(45deg);
     height: 10em;
-    max-width: 50%;
+    max-width: 60%;
     margin: auto;
     padding: 3.3em;
 }
@@ -124,7 +124,7 @@ button {
     background: rgb(75, 0, 0);
     background-size: cover;
     background-position: center;
-    max-width: 50%;
+    max-width: 60%;
     margin: auto;
     padding: 18.5em;
     transform: translateY(-2.92em) translateZ(7.07em);
@@ -230,7 +230,7 @@ li:nth-of-type(16) {
 
 li:nth-of-type(17) {
     transform: rotateX(48deg) translateZ(24em);
-}
+}   
 
 li:nth-of-type(18) {
     transform: rotateX(72deg) translateZ(24em);
@@ -375,9 +375,10 @@ li:nth-of-type(45) {
 
 section, ul{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 0.8em;
+    
 }
 
 .controls {
