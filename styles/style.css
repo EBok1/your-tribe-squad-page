@@ -405,11 +405,17 @@ li:nth-of-type(45) {
 
 /* Vanaf dit punt gaan we werken aan de mobiele weergave van de website. */
 @media only screen and (max-width: 600px) {
-  .display {
+    body {
+        background-image: url(../assets/achtergrondgokkast.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+      }
+  
+    .display {
     margin: auto;
     padding: 8em;
     max-width: 90%;
-    background-image: url(../assets/gokkastdesign.png);
+    background-color: rgb(190, 188, 188);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -420,21 +426,25 @@ li:nth-of-type(45) {
   }
 
   .carrouselborder {
-    border: solid gold;
+    border: solid black;
     height: 25em;
     display: flex;
     flex-direction: row;
     overflow: hidden;
     justify-content: center;
+    align-content: center;
     align-items: center;
+    
   }
+  
 
   section,
   ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 0.8em;
+    
   }
 
   .controls {
@@ -442,7 +452,7 @@ li:nth-of-type(45) {
     height: 10em;
     margin: auto;
     padding: 3.3em;
-    background-color: rgb(75, 0, 0);
+    background-color: rgb(190, 188, 188);
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -452,7 +462,7 @@ li:nth-of-type(45) {
 
   .bottom {
     transform-origin: top;
-    background-image: url(../assets/gokkastdesign.png);
+    background-color: rgb(190, 188, 188);
     background-size: cover;
     background-position: center;
     max-width: 90%;
