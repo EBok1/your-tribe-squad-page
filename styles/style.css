@@ -10,6 +10,7 @@
 /* Dit is de achtergrond van de website, de gokkast komt hiervoor te staan. */
 
 body {
+  font-family: Arial, Helvetica, sans-serif;
   background-image: url(../assets/achtergrondgokkast.png);
   background-size: 100%;
 }
@@ -105,7 +106,7 @@ h2 {
 
 /* Vanaf dit punt kijken we naar het middelste vlak, waar de controls van de kast zitten. */
 .controls {
-  background-color: rgb(136, 136, 136);
+  background-color: #888888;
   transform-origin: center top;
   transform: rotateX(45deg);
   height: 12em;
