@@ -59,19 +59,22 @@ const pickRandomCards = async (arr1, arr2, arr3) => {
 
 
   changeSpinState(carousel1, "stop");
-  carousel1.style.transform = "translateX(-7.28em) rotateX(" + cardPosition1 + "deg)";
+  // carousel1.style.transform = "translateX(-7.28em) rotateX(" + cardPosition1 + "deg)";
+  carousel1.style.transform = "rotateX(" + cardPosition1 + "deg)";
   console.log(cardPosition1);
 
   await sleep(1000);
 
   changeSpinState(carousel2, "stop");
-  carousel2.style.transform = "translateX(-7.28em) rotateX(" + cardPosition2 + "deg)";
+  // carousel2.style.transform = "translateX(-7.28em) rotateX(" + cardPosition2 + "deg)";
+  carousel2.style.transform = "rotateX(" + cardPosition2 + "deg)";
   console.log(cardPosition2);
 
   await sleep(1000);
 
   changeSpinState(carousel3, "stop");
-  carousel3.style.transform = "translateX(-7.28em) rotateX(" + cardPosition3 + "deg)";
+  // carousel3.style.transform = "translateX(-7.28em) rotateX(" + cardPosition3 + "deg)";
+  carousel3.style.transform = "rotateX(" + cardPosition3 + "deg)";
   console.log(cardPosition3);
 };
 
