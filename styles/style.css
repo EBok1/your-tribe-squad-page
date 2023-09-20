@@ -136,7 +136,7 @@ h2 {
 	-moz-border-radius: 50%;
 	-o-border-radius: 50%;
 		border-radius: 50%;
-	background-color: red;
+	background-color: darkred;
 	-webkit-box-shadow:  0 .3em maroon;
 	-moz-box-shadow:  0 .3em maroon;
 	-o-box-shadow:  0 .3em maroon;
@@ -168,7 +168,6 @@ h2 {
   box-shadow: 0 0.3em rgb(87, 85, 85);
   cursor: pointer;
   font-size: 2.1em;
-  
 }
 
 .spin-btn:active,
