@@ -57,10 +57,10 @@ section {
 }
 
 h1 {
-    color: gold;
+    color: white;
     float: right;
     margin: auto;
-    text-shadow: 0 0.1em darkgoldenrod;
+    text-shadow: 0 0.1em darkslategrey;
 }
 
 ul {
@@ -183,7 +183,7 @@ h2 {
   background-position: center;
   max-width: 60%;
   margin: auto;
-  padding: 18.5em;
+  padding: 4em;
   transform: translateY(-3.62em) translateZ(8.39em);
 }
 
@@ -222,185 +222,185 @@ h2 {
 /* De volgende zeëen aan code zijn om de carrousel 3D en rond te maken om te draaien. */
 /* Carrousel 1 */
 li:nth-of-type(1) {
-  transform: rotateX(24deg) translateZ(40em);
+  transform: rotateX(24deg) translateZ(39em);
 }
 
 li:nth-of-type(2) {
-  transform: rotateX(48deg) translateZ(40em);
+  transform: rotateX(48deg) translateZ(39em);
 }
 
 li:nth-of-type(3) {
-  transform: rotateX(72deg) translateZ(40em);
+  transform: rotateX(72deg) translateZ(39em);
 }
 
 li:nth-of-type(4) {
-  transform: rotateX(96deg) translateZ(40em);
+  transform: rotateX(96deg) translateZ(39em);
 }
 
 li:nth-of-type(5) {
-  transform: rotateX(120deg) translateZ(40em);
+  transform: rotateX(120deg) translateZ(39em);
 }
 
 li:nth-of-type(6) {
-  transform: rotateX(144deg) translateZ(40em);
+  transform: rotateX(144deg) translateZ(39em);
 }
 
 li:nth-of-type(7) {
-  transform: rotateX(168deg) translateZ(40em);
+  transform: rotateX(168deg) translateZ(39em);
 }
 
 li:nth-of-type(8) {
-  transform: rotateX(192deg) translateZ(40em);
+  transform: rotateX(192deg) translateZ(39em);
 }
 
 li:nth-of-type(9) {
-  transform: rotateX(216deg) translateZ(40em);
+  transform: rotateX(216deg) translateZ(39em);
 }
 
 li:nth-of-type(10) {
-  transform: rotateX(240deg) translateZ(40em);
+  transform: rotateX(240deg) translateZ(39em);
 }
 
 li:nth-of-type(11) {
-  transform: rotateX(264deg) translateZ(40em);
+  transform: rotateX(264deg) translateZ(39em);
 }
 
 li:nth-of-type(12) {
-  transform: rotateX(288deg) translateZ(40em);
+  transform: rotateX(288deg) translateZ(39em);
 }
 
 li:nth-of-type(13) {
-  transform: rotateX(312deg) translateZ(40em);
+  transform: rotateX(312deg) translateZ(39em);
 }
 
 li:nth-of-type(14) {
-  transform: rotateX(336deg) translateZ(42.5em);
+  transform: rotateX(336deg) translateZ(39em);
 }
 
 li:nth-of-type(15) {
-  transform: rotateX(360deg) translateZ(42.5em);
+  transform: rotateX(360deg) translateZ(39em);
 }
 
 /* Carrousel 2 */
 li:nth-of-type(16) {
-  transform: rotateX(24deg) translateZ(40em);
+  transform: rotateX(24deg) translateZ(39em);
 }
 
 li:nth-of-type(17) {
-  transform: rotateX(48deg) translateZ(40em);
+  transform: rotateX(48deg) translateZ(39em);
 }
 
 li:nth-of-type(18) {
-  transform: rotateX(72deg) translateZ(40em);
+  transform: rotateX(72deg) translateZ(39em);
 }
 
 li:nth-of-type(19) {
-  transform: rotateX(96deg) translateZ(40em);
+  transform: rotateX(96deg) translateZ(39em);
 }
 
 li:nth-of-type(20) {
-  transform: rotateX(120deg) translateZ(40em);
+  transform: rotateX(120deg) translateZ(39em);
 }
 
 li:nth-of-type(21) {
-  transform: rotateX(144deg) translateZ(40em);
+  transform: rotateX(144deg) translateZ(39em);
 }
 
 li:nth-of-type(22) {
-  transform: rotateX(168deg) translateZ(40em);
+  transform: rotateX(168deg) translateZ(39em);
 }
 
 li:nth-of-type(23) {
-  transform: rotateX(192deg) translateZ(40em);
+  transform: rotateX(192deg) translateZ(39em);
 }
 
 li:nth-of-type(24) {
-  transform: rotateX(216deg) translateZ(40em);
+  transform: rotateX(216deg) translateZ(39em);
 }
 
 li:nth-of-type(25) {
-  transform: rotateX(240deg) translateZ(40em);
+  transform: rotateX(240deg) translateZ(39em);
 }
 
 li:nth-of-type(26) {
-  transform: rotateX(264deg) translateZ(40em);
+  transform: rotateX(264deg) translateZ(39em);
 }
 
 li:nth-of-type(27) {
-  transform: rotateX(288deg) translateZ(40em);
+  transform: rotateX(288deg) translateZ(39em);
 }
 
 li:nth-of-type(28) {
-  transform: rotateX(312deg) translateZ(40em);
+  transform: rotateX(312deg) translateZ(39em);
 }
 
 li:nth-of-type(29) {
-  transform: rotateX(336deg) translateZ(42.5em);
+  transform: rotateX(336deg) translateZ(39em);
 }
 
 li:nth-of-type(30) {
-  transform: rotateX(360deg) translateZ(42.5em);
+  transform: rotateX(360deg) translateZ(39em);
 }
 
 /* Carrousel 3 */
 li:nth-of-type(31) {
-  transform: rotateX(24deg) translateZ(40em);
+  transform: rotateX(24deg) translateZ(39em);
 }
 
 li:nth-of-type(32) {
-  transform: rotateX(48deg) translateZ(40em);
+  transform: rotateX(48deg) translateZ(39em);
 }
 
 li:nth-of-type(33) {
-  transform: rotateX(72deg) translateZ(40em);
+  transform: rotateX(72deg) translateZ(39em);
 }
 
 li:nth-of-type(34) {
-  transform: rotateX(96deg) translateZ(40em);
+  transform: rotateX(96deg) translateZ(39em);
 }
 
 li:nth-of-type(35) {
-  transform: rotateX(120deg) translateZ(40em);
+  transform: rotateX(120deg) translateZ(39em);
 }
 
 li:nth-of-type(36) {
-  transform: rotateX(144deg) translateZ(40em);
+  transform: rotateX(144deg) translateZ(39em);
 }
 
 li:nth-of-type(37) {
-  transform: rotateX(168deg) translateZ(40em);
+  transform: rotateX(168deg) translateZ(39em);
 }
 
 li:nth-of-type(38) {
-  transform: rotateX(192deg) translateZ(40em);
+  transform: rotateX(192deg) translateZ(39em);
 }
 
 li:nth-of-type(39) {
-  transform: rotateX(216deg) translateZ(40em);
+  transform: rotateX(216deg) translateZ(39em);
 }
 
 li:nth-of-type(40) {
-  transform: rotateX(240deg) translateZ(40em);
+  transform: rotateX(240deg) translateZ(39em);
 }
 
 li:nth-of-type(41) {
-  transform: rotateX(264deg) translateZ(40em);
+  transform: rotateX(264deg) translateZ(39em);
 }
 
 li:nth-of-type(42) {
-  transform: rotateX(288deg) translateZ(40em);
+  transform: rotateX(288deg) translateZ(39em);
 }
 
 li:nth-of-type(43) {
-  transform: rotateX(312deg) translateZ(40em);
+  transform: rotateX(312deg) translateZ(39em);
 }
 
 li:nth-of-type(44) {
-  transform: rotateX(336deg) translateZ(42.5em);
+  transform: rotateX(336deg) translateZ(39em);
 }
 
 li:nth-of-type(45) {
-  transform: rotateX(360deg) translateZ(42.5em);
+  transform: rotateX(360deg) translateZ(39em);
 }
 
 /* Vanaf dit punt gaan we werken aan de mobiele weergave van de website. */

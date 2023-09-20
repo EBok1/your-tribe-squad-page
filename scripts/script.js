@@ -14,8 +14,7 @@ function slotmuziek() {
   audiobestand.play();
 } ;
 
-
-  
+ 
 window.onload = () => {
   // Initialize the card arrays on page load
   cardsArray1 = arrayFromList('.carousel-1 > li');
@@ -41,7 +40,7 @@ const pickRandomCards = async (arr1, arr2, arr3) => {
   changeSpinState(carousel2, "continue");
   changeSpinState(carousel3, "continue");
 
-  await sleep(6000);
+  await sleep(4750);
   
   // Choose random cards from each array
   var selectedCard1 = pickRandomFromArray(arr1);
@@ -53,9 +52,9 @@ const pickRandomCards = async (arr1, arr2, arr3) => {
   selectedCard2.classList.add('selected');
   selectedCard3.classList.add('selected');
   
-  var cardPosition1 = 360/15*findSelectedCardPosition(carousel1, selectedCard1);
-  var cardPosition2 = 360/15*findSelectedCardPosition(carousel2, selectedCard2);
-  var cardPosition3 = 360/15*findSelectedCardPosition(carousel3, selectedCard3);
+  var cardPosition1 = 360/15*findSelectedCardPosition(carousel1, selectedCard1) + 13;
+  var cardPosition2 = 360/15*findSelectedCardPosition(carousel2, selectedCard2) + 13;
+  var cardPosition3 = 360/15*findSelectedCardPosition(carousel3, selectedCard3) + 13;
 
 
   changeSpinState(carousel1, "stop");
