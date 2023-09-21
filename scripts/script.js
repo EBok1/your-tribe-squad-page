@@ -1,4 +1,5 @@
 // ---------- Global variables ---------- //
+
 var cardsArray1 = [];
 var cardsArray2 = [];
 var cardsArray3 = [];
